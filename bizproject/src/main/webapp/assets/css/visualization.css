@@ -1,0 +1,36 @@
+.iduCheckHeading {
+	width: 10%;
+}
+
+.iduNameHeading {
+	width: 15%;
+}
+
+.iduLocationHeading{
+	width: 75%;
+}
+
+.panel-stats {
+	margin-bottom: 0px;
+}
+
+.margin-bottom {
+	margin-bottom: 10px;
+}
+
+.refCheckHeading {
+	width: 10%;
+}
+
+.refNameHeading {
+	width: 90%;
+}
+#stats_group_graph{height:500px;}
+#stats_ref_graph {height:307px;}
+#stats_idu_graph{height:306px;}
+#stats_efficiency_graph{height:512px;}
+
+.highcharts-tooltip span {
+	max-height:250px !important;
+	overflow-y: scroll !important;
+}

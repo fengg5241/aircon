@@ -1,0 +1,163 @@
+#page-wrapper{
+	background-color: white;
+}
+
+#map {
+	height:340px;
+}
+
+.svgHighlight {
+	border:3px solid red;
+}
+
+.leaflet-container{
+	background-color:#fff;
+}
+
+.levelPanelButton{
+	background-color: #a5a6a6;
+	opacity:0.8;
+	color:white;
+}
+#acdetails{
+	height:790px;
+}
+
+#acDetailScrollDiv .mCSB_inside > .mCSB_container{ margin-right: 0px; }
+
+.padding0{
+	padding:0px;
+}
+
+#dashboardViewFrame .homeScreenFrame{
+	padding:0px 23px 20px 13px;
+}
+
+.ACDetailTitle{
+	font-size:26px;
+	color:#626465;
+/* 	font-family: PUD-Sans_serif-M Reg; */
+	background-color:#edeeef;
+}
+
+/* #acDetailTbody{ */
+/* 	font-size:16px; */
+/* 	color:#a5a6a6; */
+/* /* 	font-family: PUD-Sans_serif-M Reg; */ */
+/* } */
+
+#air{
+	padding:0px;
+	height:100%;
+}
+
+#air .ibox-content{
+	background-color:#edeeef;
+	padding:0px 1px;
+}
+
+#air .ibox{
+	margin-bottom:0px;
+}
+
+#floorMapFrame .ibox-title{
+	background-color:#edeeef;
+/* 	font-family: PUD-Sans_serif-M Reg; */
+	color:#676a6c;
+	font-size:26px;
+	/* margin-top:10px; */
+}
+
+#control_buttons{
+	background-color:#edeeef;
+	opacity:0.8;	
+}
+
+#control_buttons button{
+	margin-bottom:3px;
+}
+
+#control_buttons button:last-child{
+	margin-bottom:0px;
+}
+
+.leaflet-control-zoom {
+	font-size:24px;
+}
+
+/* .menuDefault{ */
+/* 	background-color:#f3f4f6; */
+/* } */
+
+/* map area */
+.buildingMapTitle{
+	font-size:34px;
+	color:#626465;
+	background-color:#edeeef;
+}
+
+.CO2graph{
+	font-size:13px;
+	font-family: panasonic;
+	 margin-left:-70px; 
+	src: url(../fonts/PUDSansserifR.ttf);
+}
+
+/* whether */
+#locationTemp{
+	font-size:28px;
+	font-weight:bold;
+}
+
+#tempNumber{
+	font-size:36px;
+}
+
+#locationWeather{
+	font-size:18px;
+	font-weight:bold;
+}
+
+#homeWeather{
+	padding-top:30px;
+}
+
+/* popup */
+.greyBackGroundColorPopup{
+	background-color: #E6E6E6;
+}
+
+.leaflet-popup-content-wrapper{
+	background-color: #E6E6E6;
+	border-radius:0;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+	background-color: #E6E6E6;;
+}
+
+.leaflet-popup-content{
+	margin:5px;
+}
+.leaflet-popup-content .title{
+	background-color: #E6E6E6;
+}
+
+.settingBody{
+	background-color:white;
+	padding-bottom:5px;
+}
+
+.settingContent{
+	margin:0 5px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.leaflet-popup-content  p{
+	padding:0;
+	margin:0;
+}
+
+#weatherlocation{
+	max-width:230px;
+}

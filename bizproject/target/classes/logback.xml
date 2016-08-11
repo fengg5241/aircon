@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <!--
+  ********************************************************
+     root logger
+  ********************************************************
+  -->
+  <appender name="ROLL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/root.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/root.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_FILE" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <root level="DEBUG">
+    <appender-ref ref="ASYNC_FILE" />
+  </root>
+
+  <!-- サービスPF用の定義 - 開始 -->
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.common
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_COMMON" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/b2bac-common.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-common.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_COMMON" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_COMMON" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.common" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_COMMON"/>
+  </logger>
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.remotecontrol
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_REMOTE_CONTROL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/b2bac-remotecontrol.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-remotecontrol.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_REMOTE_CONTROL" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_REMOTE_CONTROL" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.remotecontrol" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_REMOTE_CONTROL"/>
+  </logger>
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.farmwareupdate
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_FARMWARE_UPDATE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/b2bac-farmwareupdate.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-farmwareupdate.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_FARMWARE_UPDATE" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_FARMWARE_UPDATE" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.farmwareupdate" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_FARMWARE_UPDATE"/>
+  </logger>
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.datastorage
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_DATA_STORAGE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/b2bac-datastorage.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-datastorage.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_DATA_STORAGE" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_DATA_STORAGE" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.datastorage" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_DATA_STORAGE"/>
+  </logger>
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.dataaggregation
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_DATA_AGGREGATION" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/b2bac-dataaggregation.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-dataaggregation.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_DATA_AGGREGATION" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_DATA_AGGREGATION" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.dataaggregation" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_DATA_AGGREGATION"/>
+  </logger>
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.servicestatus
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_SERVICE_STATUS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/b2bac-servicestatus.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-servicestatus.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_SERVICE_STATUS" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_SERVICE_STATUS" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.servicestatus" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_SERVICE_STATUS"/>
+  </logger>
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.facility
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_FACILITY" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>C:/bizportal/b2bac-facility.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-facility.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_FACILITY" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_FACILITY" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.facility" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_FACILITY"/>
+  </logger>
+
+  <!--
+  ********************************************************
+     com.panasonic.spf.b2bac.devicecontrol
+  ********************************************************
+  -->
+  <appender name="ROLL_B2BAC_DEVICECONTROL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>logs/b2bac-devicecontrol.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>logs/b2bac-devicecontrol.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <!-- RollingはAsyncと併用するべき -->
+  <appender name="ASYNC_B2BAC_DEVICECONTROL" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLL_B2BAC_DEVICECONTROL" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <logger name="com.panasonic.spf.b2bac.devicecontrol" level="DEBUG" additivity="false">
+    <appender-ref ref="ASYNC_B2BAC_DEVICECONTROL"/>
+  </logger>
+
+  <!-- サービスPF用の定義 - 終了 -->
+
+</configuration>

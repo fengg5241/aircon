@@ -1,0 +1,43 @@
+#checkboxMenuTree, #checkboxMenuTrees{
+    width: 877px;
+    max-height: 439px;
+    overflow: auto;
+}
+#treeBody {
+    background-color: white;
+}
+#treeContent {
+    margin: 10px;
+}
+#treeFrame,#treeFrames {
+    position: absolute;
+    margin-left: 1px;
+    margin-top:-20px;
+}
+
+#treeFrames{
+	margin-top:-1px;
+	margin-top:-20px;
+}
+.bizFontColor {
+    color: #646464;
+}
+.greyBackground {
+    background-color: #CCCCCC;
+}
+
+.textRole {
+    width:20%;
+}
+.textGroup {
+    width:60%;
+}
+.textnewRole {
+    width:20%;
+}
+.userimage{
+	width:898px;
+}
+.updatepanel{
+	height:140px;
+}

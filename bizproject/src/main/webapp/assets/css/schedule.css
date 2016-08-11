@@ -1,0 +1,39 @@
+.dialogGreyBackground {
+	background-color: #E6E6E6;
+}
+
+.fc-event, .fc-agenda .fc-event-time, .fc-event a{
+	background-color: #324b8c;
+}
+
+.fc-prev-button,.fc-next-button{
+	background-color:white;
+	border:0;
+}
+
+.fc-center h2{
+	font-size:15px;
+}
+
+.fc-row{
+	height:25px !important;
+}
+
+.fc-basic-view tbody .fc-row{
+	min-height:45px;
+}
+
+.fc .fc-row{
+	background-color:white;
+}
+.fc-event, .fc-agenda .fc-event-time, .fc-event a{
+	padding:0;
+}
+
+#editPlanModal .modal-lg{
+	width:80%;
+}
+
+#editPlanModal .bizModal{
+	height:700px;
+}

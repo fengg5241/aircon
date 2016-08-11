@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- Log message format -->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  <!-- Ned appender to write to file -->
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!-- Name of the file where the log messages are written -->
+	<File>/var/log/b2bac/etl-weatherforecast.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>/var/log/b2bac/etl-weatherforecast.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+      <MaxHistory>45</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%-10.-10thread] %class\(%file:%line\) %msg%n</Pattern>
+    </encoder>
+  </appender>
+<!--   <logger name="net.javabeat.service" level="WARN"> -->
+<!--     <appender-ref ref="FILE" /> -->
+<!--   </logger> -->
+<!--   <logger name="net.javabeat.model" level="INFO"> -->
+<!--     <appender-ref ref="FILE" /> -->
+<!--   </logger> -->
+
+  <!-- Setting the root level of logging to INFO -->
+  <root level="info">
+    <appender-ref ref="FILE" />
+  </root>
+</configuration>

@@ -1,0 +1,339 @@
+.tropology_gropdown
+{
+    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+       margin-top: 13px;
+    margin-left: -18px;
+}
+.bizButton-retrieve {
+	    border-radius: 5px;
+    font-size: 13px;
+    border-color: #b3b3b3;
+    color: #646464;
+                 margin-top: 10px;
+    margin-bottom: 31px;
+    width: 163px;
+    height: 28px;
+    
+}
+#hide_td{
+	display:none;
+}
+.panel_toplogy>.panel-toplogy-heading {
+	        background-color: #4d4d4d;
+    border-color: #4d4d4d;
+    color: #ffffff;
+    border-radius: 0px;
+    width: 1379px;
+    margin-left: -31px;
+    padding: 5px 13px;
+    border-bottom: 1px solid;;
+       
+	
+}
+.dst_gropdown{
+	
+	background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+        margin-left: -20px;
+}
+
+.group_tab{
+	         margin-left: 30px;
+}
+.dgroup_gropdown
+{
+        background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+    margin-left: -15px;
+}
+.dgroup_gropdown_name{
+	    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+    
+}
+.group_name{
+	    margin-left: 16px;
+}
+.View_Idu_Table{
+	
+	     
+    width: 100%;
+}
+.table_pulsemeter{
+	    margin-left: 30px;
+    width: 98%;   
+}
+.dgroup_gropdown2
+{
+        background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+      
+}
+
+.DistributionGroupName{
+	    margin-left: 20px;
+}
+.idu_table_view{
+	    margin-left: -4px;
+    width: 100%;
+        margin-top: 11px;;
+}
+
+.row1{
+	    margin-top: 29px;
+}
+.idu_table_view_name{
+	margin-left: 19px;
+	    margin-top: 124px;
+}
+.idu_table_view1{
+	         width: 98%;
+   
+   
+    margin-left: 10px;
+    margin-top: 14px;
+   
+}
+
+/* .idu_table_view_name1{
+	    margin-left: 46px;
+}
+ */
+.dgroup-textbox
+{
+         height: 25px;
+   
+    background: #E3E2E2;
+    border-radius: 6px;
+    width: 300px;
+    display: none;
+    
+}
+.dgroup_gropdown_type{
+	
+	    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: -3px;
+         display: none; 
+}
+.type{
+	
+	    margin-top: -20px;
+	     display: none; 
+}
+
+.Calculation{
+	    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: -3px;
+	    display: none;
+}
+
+.bizButton-add{
+	    border-radius: 5px;
+    font-size: 13px;
+    border-color: #b3b3b3;
+    color: #646464;
+    margin-top: 21px;
+    margin-bottom: 31px;
+    width: 163px;
+    height: 28px;
+     display: none;
+}
+
+
+.row1 {
+	    margin-top: 40px;
+}
+
+.btn_remove{
+	    margin-top: -5px;
+	        border-radius: 5px;
+    font-size: 13px;
+    border-color: #b3b3b3;
+    color: #646464;
+   
+    width: 163px;
+    height: 28px;
+}
+
+
+.toplogy-cell
+{
+        width: 163px;
+}
+
+
+
+.dgroup_gropdown_cloud_adapter{
+	    border-radius: 5px;
+    width: 300px;
+    background-color: #E3E2E2;
+}
+
+
+.table-responsive_distribution_group{
+	  /*   height: 200px;
+    margin-left: -1px;
+    width: 97%;
+    overflow-y: auto;
+    overflow-x: hidden; */
+}
+.distribution_group_name{
+	    display: block;
+  
+    margin-top: -22px;
+}
+
+
+.dropdown-menu-cloudadaptor{
+    background: #E3E2E2;
+    border-radius: 4px;
+    width: 28%;
+    height: 23px;
+    font-size: 14px;
+    padding: 0px 10px;
+    
+}
+.dropdown-menu-cloudadaptor-pannel{
+    width: 27%;
+    margin-left: 17px;	
+    background: #E3E2E2;
+    font-size: 15px;
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+    height: 70px;
+    
+        
+}
+.idu_table_view_name1{
+	    display: block;
+    margin-left: 35px;
+        margin-top: -34px;
+}
+
+.dropdown-menu-sitenames{
+	background: #E3E2E2;
+    border-radius: 4px;
+    width: 94%;
+    height: 23px;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.dropdown-menu-sitenames-pannel{
+	       min-width: 286px;
+    margin-left: 17px;
+	    background: #E3E2E2;
+}    
+
+.dropdown-menu2{
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+     display: none; 
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+    z-index: 1000; 
+    height: 70px;
+    overflow-y: auto;
+  
+}
+.open>.dropdown-menu2 {
+    display: block; 
+}
+.dropdown-menu2>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+        font-size: 16px;
+} 
+
+.dropdown-menu1>li>a{
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    font-size: 16px;
+}
+.open>.dropdown-menu1 {
+    display: block; 
+}
+    
+.open>.dropdown-menu3 {
+    display: block;
+} 
+.dropdown-menu3 {
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+    z-index: 1000;
+}
+
+.site_checkbox{
+	
+	width: 17px;
+    height: 30px;
+}
+
+
+
+.OverView_IDU_Table_Name{
+	    margin-left: 23px;
+}
+
+
+#table_distribution_group_pls_id{
+	    margin-top: 16px;
+}
+
+
+
+
+
+
+

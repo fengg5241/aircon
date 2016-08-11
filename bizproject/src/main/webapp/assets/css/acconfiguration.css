@@ -1,0 +1,750 @@
+.floatright{float:right;}
+.floatleft{float:left;}
+.textleft{text-align: left;}
+.paddingleft50{padding-left:50px;}
+.paddingleft80{padding-left:80px;}
+
+.redFont{color:red;}
+
+.speech-bubble {
+	position: relative;
+	background-color: #e6e7e9;
+	color:transparent;
+	border-radius:5px;
+/* 	width: 100%; */
+	height: 59px;
+/* 	line-height: 150px;Vertical Center */
+/* 	color: white; */
+	text-align: center;
+/* 	border-radius: 10px; */
+/* 	font-family: sans-serif; */
+	margin-top:15px;
+	margin-left:0;
+	margin-right:0;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 15px solid;
+}
+
+/* arrow position */
+.speech-bubble-mode:after {
+/* 	border-bottom-color: #292929; */
+	border-bottom-color: white;
+	left: 12%;
+	bottom: 100%;
+	margin-left: -15px;
+}
+
+.speech-bubble-fanSpeed:after {
+/* 	border-bottom-color: #292929; */
+	border-bottom-color: white;
+	left: 37%;
+	bottom: 100%;
+	margin-left: -15px;
+}
+
+.speech-bubble-flap:after {
+/* 	border-bottom-color: #292929; */
+	border-bottom-color: white;
+	left: 62%;
+	bottom: 100%;
+	margin-left: -15px;
+}
+
+.speech-bubble-energySaving:after {
+/* 	border-bottom-color: #292929; */
+	border-bottom-color: white;
+	left: 87%;
+	bottom: 100%;
+	margin-left: -15px;
+}
+
+.speech-bubble-power:after {
+	border-bottom-color: white;
+	left: 50%;
+	bottom: 100%;
+	margin-left: -15px;
+}
+
+.controlIcon{
+	width:70px;
+	height:58px;
+}
+
+
+#tempSettingFrame{
+	color: #676A63;
+	font-size:18px;
+	padding-right: 5px;
+}
+
+#tempSettingFrame .selected,#energySavingControlPanel .selected{
+	background-color:#0777e5;
+	color:white;
+}
+
+#tempSettingFrame .onPowerStatus{
+	color:#0777e5;
+}
+
+#tempSettingFrame .offPowerStatus{
+	color:#BBBBBB;
+}
+
+#powerControlPanel,#powerControl{
+	margin-left:15px;
+}
+
+.powerStatusButton{
+	color: #676A63;
+	padding:0;
+	border-radius: 5px;
+}
+
+.powerStatusButton.disabled{
+	color: #BBBBBB;
+}
+
+.energySavingButton{
+	color: #676A63;
+	border-radius: 5px;
+	line-height:58px;
+	font-size:18px;
+}
+
+.energySavingButton .controlIcon{
+	border-radius: 5px;
+}
+
+#remoteControlRightFrame{
+	padding-left:25px;
+}
+
+#modeControl div {
+	background:url('../img/remoteControl/ACRemote_Buttons_Mode-Control.png') no-repeat;
+	height:58px;
+}
+
+#modeControl div.selected {
+	background:url('../img/remoteControl/ACRemote_Buttons_Mode_Control_Hlight.png') no-repeat;
+}
+
+#modeControl div.disabled {
+	background:url('../img/remoteControl/ACRemote_Buttons_Mode-Control Disabled.png') no-repeat;
+}
+
+#modeControl div.autoSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Auto Mode Selected.png') no-repeat;
+}
+
+#modeControl div.heatSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Heat Mode Selected.png') no-repeat;
+}
+
+#modeControl div.drySelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Dry Mode Selected.png') no-repeat;
+}
+
+#modeControl div.coolSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Cool Mode Selected.png') no-repeat;
+}
+
+#modeControl div.fanSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Fan Mode Selected.png') no-repeat;
+}
+
+#fanSpeedControl div {
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan-Control.png') no-repeat;
+	height:58px;
+}
+
+#fanSpeedControl div.selected {
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Control_Hlight.png') no-repeat;
+}
+
+#fanSpeedControl div.disabled {
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan-Control Disabled.png') no-repeat;
+}
+
+
+#fanSpeedControl div.lowSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Fan Speed Low Selected.png') no-repeat;
+}
+
+#fanSpeedControl div.mediumSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Fan Speed Med Selected.png') no-repeat;
+}
+
+#fanSpeedControl div.highSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Fan Speed High Selected.png') no-repeat;
+}
+
+#fanSpeedControl div.autoSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Fan Speed Auto Selected.png') no-repeat;
+}
+
+#flapControl div {
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap_Control.png') no-repeat;
+	height:58px;
+}
+
+#flapControl div.selected {
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap_Control_Hlight.png') no-repeat;
+}
+
+#flapControl div.f1Selected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap 1 Selected.png') no-repeat;
+}
+
+
+#flapControl div.f2Selected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap 2 Selected.png') no-repeat;
+}
+
+
+#flapControl div.f3Selected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap 3 Selected.png') no-repeat;
+}
+
+
+#flapControl div.f4Selected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap 4 Selected.png') no-repeat;
+}
+
+#flapControl div.f5Selected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap 5 Selected.png') no-repeat;
+}
+
+#flapControl div.swingSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap Swing Selected.png') no-repeat;
+}
+
+#flapControl div.offSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap Off Selected.png') no-repeat;
+}
+
+#flapControl div.disabled {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Flap Disabled.png') no-repeat;
+}
+
+#energySavingControl div {
+	background:url('../img/remoteControl/ACRemote_Buttons_Energy_Savings.png') no-repeat;
+	height:58px;
+}
+
+#energySavingControl div.selected {
+	background:url('../img/remoteControl/ACRemote_Buttons_Energy_Savings_Hlight.png') no-repeat;
+}
+
+#energySavingControl div.disabled {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Energy Saving Disabled.png') no-repeat;
+	height:58px;
+}
+
+#energySavingControl div.onSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Energy Saving On.png') no-repeat;
+}
+
+#energySavingControl div.offSelected {
+	background:url('../img/remoteControl/AC Remote Icons Standard_Energy Saving Off.png') no-repeat;
+}
+
+.autoMode div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Auto.png') no-repeat;
+}
+
+.autoMode div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Auto_Hlight.png') no-repeat;
+}
+
+.autoMode div.disabled {
+	background:url('../img/remoteControl/AC Remote Icons_AutoDisabled.png') no-repeat;
+}
+
+.heatMode div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Heat.png') no-repeat;
+}
+
+.heatMode div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Heat_Hlight.png') no-repeat;
+}
+
+.heatMode div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons_Heat Mode Disabled.png') no-repeat;
+}
+
+.dryMode div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Dry.png') no-repeat;
+}
+
+.dryMode div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Dry_Hlight.png') no-repeat;
+}
+
+.dryMode div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons_Dry Mode Disabled.png') no-repeat;
+}
+
+.coolMode div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Cool.png') no-repeat;
+}
+
+.coolMode div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Cool_Hlight.png') no-repeat;
+}
+
+.coolMode div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons_Cool Mode Disabled.png') no-repeat;
+}
+
+.fanMode div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan.png') no-repeat;
+}
+
+.fanMode div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Hlight.png') no-repeat;
+}
+
+.fanMode div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons_Fan Mode Disabled.png') no-repeat;
+}
+
+.mixFanSpeed div{
+	background:url('../img/remoteControl/fanspeed-mix.png') no-repeat;
+}
+
+.mixFanSpeed div.selected{
+	background:url('../img/remoteControl/fanspeed-mix.png') no-repeat;
+}
+
+.lowFanSpeed div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_Low.png') no-repeat;
+}
+
+.lowFanSpeed div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_Low_Hlight.png') no-repeat;
+}
+
+.lowFanSpeed div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons Fan Speed Low Disable.png') no-repeat;
+}
+
+.mediumFanSpeed div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_Med.png') no-repeat;
+}
+
+.mediumFanSpeed div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_Med_Hlight.png') no-repeat;
+}
+
+.mediumFanSpeed div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons Fan Speed Med Disable.png') no-repeat;
+}
+
+.highFanSpeed div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_High.png') no-repeat;
+}
+
+.highFanSpeed div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_High_Hlight.png') no-repeat;
+}
+
+.highFanSpeed div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons _Fan Speed High Disable.png') no-repeat;
+}
+
+.autoFanSpeed div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_Auto.png') no-repeat;
+}
+
+.autoFanSpeed div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Fan_Speed_Auto_Hlight.png') no-repeat;
+}
+
+.autoFanSpeed div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons Fan Speed Auto Disabled.png') no-repeat;
+}
+
+.offFlap div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap_Off.png') no-repeat;
+}
+
+.offFlap div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap_Off_Hlight.png') no-repeat;
+}
+
+.f1Flap div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap1.png') no-repeat;
+}
+
+.f1Flap div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap1_Hlight.png') no-repeat;
+}
+
+.f2Flap div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap2.png') no-repeat;
+}
+
+.f2Flap div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap2_Hlight.png') no-repeat;
+}
+
+.f3Flap div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap3.png') no-repeat;
+}
+
+.f3Flap div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap3_Hlight.png') no-repeat;
+}
+
+.f4Flap div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap4.png') no-repeat;
+}
+
+.f4Flap div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap4_Hlight.png') no-repeat;
+}
+
+.f4Flap div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons_Flap 4 Disabled.png') no-repeat;
+}
+
+.f5Flap div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap5.png') no-repeat;
+}
+
+.f5Flap div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap5_Hlight.png') no-repeat;
+}
+
+.f5Flap div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons_Flap 5 Disabled.png') no-repeat;
+}
+
+.swingFlap div{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap_Swing.png') no-repeat;
+}
+
+.swingFlap div.selected{
+	background:url('../img/remoteControl/ACRemote_Buttons_Flap_Swing_Hlight.png') no-repeat;
+}
+
+.swingFlap div.disabled{
+	background:url('../img/remoteControl/AC Remote Icons_Swing Mode Disabled.png') no-repeat;
+}
+
+
+.modeless{
+    top:10%;
+    left:50%;
+    bottom:auto;
+    right:auto;
+    margin-left:-300px;
+}
+
+.ui-resizable-handle.ui-resizable-se.ui-icon.ui-icon-gripsmall-diagonal-se{
+	position:absolute;
+	right:1px;
+}
+
+/* ac detail table */
+#air{
+	padding-left:0;
+	padding-right:0;
+}
+
+/* -- IDU DETAIL TABLE */
+.acDetailHeaderCheckbox{width:2%;}
+.acDetailSite{width:12%;}
+.acDetailLoc{width:12%;}
+.acDetailPC{width:12%;}
+.acDetailName{width:14%;}
+/* .acDeviceName{width:8%;} */
+.acDetailStatus{width:5%;}
+.acDetailTemp{width:5%;}
+.acDetailRoomTemp{width:5%;}
+.acDetailMode{width:5%;}
+.acDetailFanSpeed{width:4%;}
+.acDetailWind{width:4%;}
+.acDetailESaving{width:5%;}
+/* .acDetailEconavi{width:7%;} */
+.acDetailCAStatus{width:5%;}
+.acDetailViewMap{width:10%;}
+
+.onPowerFont{color:#50a05a;}
+.offPowerFont{color:#646464;}
+.autoModeFont{color:#008c00;}
+.coolModeFont{color:#0000ff;}
+.dryModeFont{color:#008cdc;}
+.fanModeFont{color:#646464;}
+.heatModeFont{color:#ff0000;}
+
+.f1FlapIcon,.f2FlapIcon,.f3FlapIcon,.f4FlapIcon,
+.f5FlapIcon,.offFlapIcon,.swingFlapIcon{
+	 width:17px;height:16px;margin:auto;margin-top:3px;
+}
+
+.f1FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_Flap1.png') no-repeat;}
+.f2FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_Flap2.png') no-repeat;}
+.f3FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_Flap3.png') no-repeat;}
+.f4FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_Flap4.png') no-repeat;}
+.f5FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_Flap5.png') no-repeat;}
+.offFlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_FlapStop.png') no-repeat;}
+.swingFlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_FlapSwing.png') no-repeat;}
+
+#IDUDetailTable .trSelected .f1FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_highlight_Flap1.png') no-repeat;}
+#IDUDetailTable .trSelected .f2FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_highlight_Flap2.png') no-repeat;}
+#IDUDetailTable .trSelected .f3FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_highlight_Flap3.png') no-repeat;}
+#IDUDetailTable .trSelected .f4FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_highlight_Flap4.png') no-repeat;}
+#IDUDetailTable .trSelected .f5FlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_highlight_Flap5.png') no-repeat;}
+#IDUDetailTable .trSelected .offFlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_highlight_FlapStop.png') no-repeat;}
+#IDUDetailTable .trSelected .swingFlapIcon{background:url('../img/flapDetail/Flap_IDUDetails_highlight_FlapSwing.png') no-repeat;}
+
+.bizTable a.prohibitionTitle{
+	color:#4d4d4d;
+}
+
+/* -- ODU DETAIL TABLE */
+.acDetailHeaderCheckbox{width:2%;}
+.acODUDetailSite{width:12%;}
+.acODUDetailSlink{width:13%;}
+.acODUDetailName{width:13%;}
+.acODUDetailDeviceName{width:12%;}
+.acODUDetailAlarmCode{width:7%;}
+.acODUDetailOutTemp{width:7%;}
+/* .acODUDetailDemand{width:7%;} */
+/* .acODUDetailOilCheck{width:8%;} */
+/* .acODUDetailEngineServ{width:8%;} */
+/* .acODUDetailPowerGen{width:8%;} */
+.acODUDetailMaintenance{width:18%;}
+	.acODUDetailComp1{width:6%;}
+	.acODUDetailComp2{width:6%;}
+	.acODUDetailComp3{width:6%;}
+.acODUDetailType{width:8%;}
+.acODUDetailViewMap{width:8%;}
+
+/* ac remote control dialog */
+.jsPanel-state-maximized, .jsPanel-state-normalized {
+	border:11px solid #908f8f;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	border-radius:4px;
+}
+
+#jsPanel-min-container .jsPanel-state-maximized, #jsPanel-min-container .jsPanel-state-normalized{
+	border:0;
+	box-shadow:0;
+}
+
+.jsPanel-btn-max,.jsPanel-btn-small{
+	display:none !important;
+}
+
+h3.jsPanel-title{
+	font-variant:normal;
+	padding-top:5px;
+	padding-left:8px;
+	font-size:16px;	
+}
+
+.panel-primary > .panel-heading{
+	background-color:#F2F2F2;
+	color: #676A63;
+	border:0;
+}
+
+.glyphicon-remove::before{
+	content:"";
+}
+
+.glyphicon-remove{
+	background:url('../img/popup/Mini_remoteIcon_Close.png') no-repeat;
+	width:20px;
+	height:20px;
+}
+
+.glyphicon-resize-full{
+	background:url('../img/popup/Mini_remoteIcon_Resize.png') no-repeat;
+	width:20px;
+	height:20px;
+}
+
+.ui-icon-gripsmall-diagonal-se::before,.glyphicon-minus::before,.glyphicon-resize-full::before{
+	content:"";
+}
+.glyphicon-minus{
+	background:url('../img/popup/Mini_remoteIcon_Minimise.png') no-repeat;
+	width:20px;
+	height:20px;
+}
+
+.jsPanel-content .ibox-content{
+    padding:0 10px;
+}
+
+#control>.ibox{
+    margin-bottom:0;
+}
+
+/* reset button */
+#control .resetButton{
+	margin : 10px 0 0 0 ;
+	width:120px;
+	/* remove below css when have reset button*/
+	height:0;
+	padding:0;
+	border:0;
+} 
+
+#energySavingSetButton{
+	padding-left:0;
+	padding-right:0;	
+}
+
+/* --- temp button */
+#powerControl,#powerControlPanel{
+	line-height:59px;
+}
+
+.tempButton{
+	padding:0 20px;
+}
+
+.controlButton{
+	width:120px;
+	border-radius:5px;
+	height:58px;	
+}
+#increaseTempButton{
+	margin-top:5px; 
+	margin-bottom:15px;	
+}
+
+#decreaseTempButton{
+	margin:20px 0 7px 0;
+}
+
+#acControlDialog p{
+	margin:0;
+}
+
+#prohibitionPanel{
+	margin-top:8px;
+	
+}
+
+.rcBlock{
+	background-color:white;
+	border-radius:4px;
+	border:1px solid #908f8f;
+}
+
+/* mapView popup */
+.leaflet-popup-content-wrapper{
+	background-color:#908f8f;
+	border-radius:0;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+	background-color:#908f8f;
+}
+
+.leaflet-popup-content{
+	margin:5px;
+}
+.leaflet-popup-content .title{
+	background-color:#b9b9b9;
+}
+
+.settingBody{
+	background-color:white;
+	padding-bottom:5px;
+}
+
+.settingContent{
+	margin:0 5px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.leaflet-popup-content  p{
+	padding:0;
+	margin:0;
+}
+.settingContent td{
+	padding-right:5px;
+}
+
+#IDUDetailTable_wrapper .lineHeight27{
+	line-height:27px;
+}
+
+/* operation log dialog */
+#operationLogModal .modal-dialog{
+	width:75%;
+}
+
+#operationLogModal .modal-body{
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:0px;
+}
+
+.acOperLogSite{width:11%;}
+.acOperLogLoc{width:11%;}
+.acOperLogName{width:12%;}
+.acOperLogStatus{width:6%;}
+.acOperLogTemp{width:4%;}
+.acOperLogMode{width:4%;}
+.acOperLogFanSpeed{width:4%;}
+.acOperLogWind{width:4%;}
+.acOperLogESaving{width:4%;}
+.acOperLogProhibition{width:20%;}
+.acOperLogDate{width:10%;}
+.acOperLogUserId{width:10%;}
+
+/* ac maiintenance */
+#maintenceStatusUpdateDiv input.bizCheckbox[type="checkbox"] + label{
+	display:inline-block;
+}
+
+/* pagination */
+/* ul.jPag-pages li a{ */
+/*     padding:5px 10px; */
+/*     height:30px; */
+/*     line-height:30px; */
+/* } */
+/* span.jPag-current{ */
+/*     line-height:30px; */
+/*     height:30px; */
+/*     padding:5px 10px; */
+/* } */
+.jPaginate{
+	width:auto;	
+}
+
+#opeartionLogPagination {
+	float:left;
+}
+#operationLogModal .jPaginate a,#operationLogModal span.jPag-current{
+	line-height:30px;
+    height:30px;
+    padding:2px 10px;
+}
+
+ul.jPag-pages li span.jPag-previous, ul.jPag-pages li span.jPag-next, span.jPag-sprevious, span.jPag-snext, ul.jPag-pages li span.jPag-previous-img, ul.jPag-pages li span.jPag-next-img, span.jPag-sprevious-img, span.jPag-snext-img{
+	height:30px;
+	line-height:30px;
+}
+
+#oplogdownload{
+	float:right;
+	margin:0;
+}
+
+.dataTables_wrapper tbody a{
+	text-decoration: underline;
+}

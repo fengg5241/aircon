@@ -1,0 +1,244 @@
+.tropology_gropdown
+{
+    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+       margin-top: 13px;
+    margin-left: -18px;
+}
+.bizButton-retrieve {
+	    border-radius: 5px;
+    font-size: 13px;
+    border-color: #b3b3b3;
+    color: #646464;
+                 margin-top: 10px;
+    margin-bottom: 31px;
+    width: 163px;
+    height: 28px;
+    
+}
+#hide_td{
+	display:none;
+}
+.panel_toplogy>.panel-toplogy-heading {
+	        background-color: #4d4d4d;
+    border-color: #4d4d4d;
+    color: #ffffff;
+    border-radius: 0px;
+    width: 1379px;
+    margin-left: -31px;
+    padding: 5px 13px;
+    border-bottom: 1px solid;;
+       
+	
+}
+.dst_gropdown{
+	
+	background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+        margin-left: -20px;
+}
+
+.group_tab{
+	         margin-left: 30px;
+}
+.dgroup_gropdown
+{
+        background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+    margin-left: -15px;
+}
+.dgroup_gropdown_name{
+	    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+    
+}
+
+.dgroup_gropdown_customer_name{
+	    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+        margin-left: 40px;
+    
+}
+
+
+
+
+
+
+
+.group_name{
+	    margin-left: 30px;
+}
+.View_Idu_Table{
+	
+	     
+    width: 100%;
+}
+.table_pulsemeter{
+	    margin-left: 30px;
+    width: 98%;   
+}
+.dgroup_gropdown2
+{
+        background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px;
+      
+}
+
+.DistributionGroupName{
+	    margin-left: 20px;
+}
+.idu_table_view{
+	    margin-left: 17px;
+    width: 98%
+}
+
+.row1{
+	    margin-top: 29px;
+}
+.idu_table_view_name{
+	margin-left: 32px;
+}
+.idu_table_view1{
+	         width: 99%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+
+.idu_table_view_name1{
+	    margin-left: 46px;
+}
+
+.dgroup-textbox
+{
+       height: 25px;
+    margin-top: -1px;
+   
+    background: #E3E2E2;
+    border-radius: 6px;
+    width: 300px;
+    display:none ;
+        margin-left: -30px;
+}
+
+
+.bizButton-add{
+	    border-radius: 5px;
+    font-size: 13px;
+    border-color: #b3b3b3;
+    color: #646464;
+    margin-top: 21px;
+    margin-bottom: 31px;
+    width: 163px;
+    height: 28px;
+     display: none;
+}
+
+
+.row1 {
+	    margin-top: 40px;
+}
+
+.btn_remove{
+	    margin-top: -5px;
+	        border-radius: 5px;
+    font-size: 13px;
+    border-color: #b3b3b3;
+    color: #646464;
+   
+    width: 163px;
+    height: 28px;
+}
+
+
+.toplogy-cell
+{
+        width: 163px;
+}
+
+
+
+
+.table-responsive_distribution_group{
+	  /*   height: 200px;
+    margin-left: -1px;
+    width: 97%;
+    overflow-y: auto;
+    overflow-x: hidden; */
+}
+
+
+.dropdown-menu-sitenames-customer{
+	background: #E3E2E2;
+    border-radius: 4px;
+    width: 94%;
+    height: 23px;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.dropdown-menu-customer-site{
+	border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 71%;
+    z-index: 1000;
+}
+
+.dropdown-menu-customer-sitenames-pannel{
+	min-width: 298px;
+    margin-left: 16px;
+    background: #E3E2E2;
+}
+
+.dropdown-menu-sitenames-customer{
+	    background: #E3E2E2;
+    border-radius: 4px;
+    width: 300px
+}
+
+
+.dropdown-menu-ca-customer{
+	    background: #E3E2E2;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 300px
+}
+
+.dropdown-menu-customer-cloud-adatpor{
+	border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+    display: none;
+    float: left;
+    font-size: 14px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 70%;
+    z-index: 1000;
+        width: 0px;
+}
+.dropdown-menu-customer-cloud-adaptor-pannel{
+	min-width: 298px;
+    margin-left: 16px;
+    background: #E3E2E2;
+}
